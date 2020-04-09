@@ -1,3 +1,3 @@
 ## Welcome to Snail
 
-A tech blog, let's see what will happened in the future.
+A tech blog, let's see what will happen in the future.
