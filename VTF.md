@@ -15,19 +15,21 @@ vertex shader通过Fetch纹理传递的数据，进行数据处理。
 
 如：
 
-`// vertex shader`
+```
+// vertex shader
 
-`vec4 vertexColor = texture2D(sameMap, gl_MultiTexCoord0.xy);`
+vec4 vertexColor = texture2D(sameMap, gl_MultiTexCoord0.xy);
 or
-`vec4 vertexColor = texture2DLod(sameMap, gl_MultiTexCoord0.xy,0.0);`
+vec4 vertexColor = texture2DLod(sameMap, gl_MultiTexCoord0.xy,0.0);
 
-`gl_Position = gl_ProjectionMatrix * (gl_ModelViewMatrix * (gl_Vertex));`
+gl_Position = gl_ProjectionMatrix * (gl_ModelViewMatrix * (gl_Vertex));
 
 
-`// pixel shader`
+// pixel shader
 
-`gl_FragColor = vertexColor;` 
+gl_FragColor = vertexColor;
 
+```
 ### Q4：VTF的实践
 
 处理地形高度图纹理、混合权重纹理等。
